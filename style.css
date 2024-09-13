@@ -1,0 +1,151 @@
+/* Basic styling for the Music Player application */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    font-family: "Nunito", sans-serif;
+    background: #141c2f;
+    font-weight: bold;
+}
+
+/* Styling for the Player Container */
+.player{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Styling for the Wrapper */
+.wrapper{
+    border: 1px solid transparent;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #ddd;
+}
+
+/* Styling for the Audio track details */
+.details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Styling for the Audio track art */
+.track-art {
+    margin: 25px;
+    height: 400px;
+    width: 400px;
+    border:1.5px solid  #040404;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+/* Styling for the Audio track name */
+.track-name {
+    font-size: 1.5rem;
+}
+
+/* Styling for the Audio track artist */
+.track-artist {
+    margin-top: 5px;
+    font-size: 1.5rem;
+}
+
+/* Styling for the Player controls */
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.active{
+    color: #000000;
+}
+    
+.repeat-track,
+.random-track,
+.playpause-track,
+.prev-track,
+.next-track {
+    padding: 25px;
+    opacity: 0.8;
+    transition: opacity .2s;
+}
+    
+.repeat-track:hover,
+.random-track:hover,
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+    opacity: 1.0;
+}
+
+/* Styling for the Slider containers of Seeking and Volume Sliders */
+.slider_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: #1d1e20;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+    
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #4abf18;
+    cursor: grab;
+    border-radius: 100%;
+}
+    
+.seek_slider:hover,
+.volume_slider:hover {
+    opacity: 1.0;
+}
+    
+.seek_slider {
+    width: 60%;
+}
+    
+.volume_slider {
+    width: 60%;
+}
+    
+.current-time,
+.total-duration {
+    padding: 10px;
+}
+    
+i.fa-volume-down,
+i.fa-volume-up {
+    padding: 10px;
+}
+    
+i,
+i.fa-play,
+i.fa-pause,
+i.fa-step-forward,
+i.fa-step-backward,
+p {
+    cursor: pointer;
+}
+
+.active{
+        color: #000000;
+}
